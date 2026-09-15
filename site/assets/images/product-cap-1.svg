@@ -1,19 +1,19 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" width="1200" height="1500" role="img" aria-label="כובע NUMB — זווית קדמית">
   <defs>
     <linearGradient id="g-product-cap-1.svg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#171614"/>
-      <stop offset="1" stop-color="#0B0B0A"/>
+      <stop offset="0" stop-color="#F1EFE7"/>
+      <stop offset="1" stop-color="#E7E3D9"/>
     </linearGradient>
   </defs>
   <rect width="1200" height="1500" fill="url(#g-product-cap-1.svg)"/>
-  <rect x="14" y="14" width="1172" height="1472" fill="none" stroke="#2a2825" stroke-width="1"/>
+  <rect x="14" y="14" width="1172" height="1472" fill="none" stroke="#d8d3c8" stroke-width="1"/>
   <g transform="translate(600.0,210.00000000000003)">
-    <rect x="-156.0" y="-96.72" width="312.0" height="193.44" rx="2" fill="none" stroke="#948F85" stroke-width="2.5"/>
-    <circle cx="0" cy="0" r="65.52" fill="none" stroke="#948F85" stroke-width="2.5"/>
-    <rect x="-54.599999999999994" y="-140.4" width="109.19999999999999" height="46.8" fill="#948F85"/>
+    <rect x="-156.0" y="-96.72" width="312.0" height="193.44" rx="2" fill="none" stroke="#726d64" stroke-width="2.5"/>
+    <circle cx="0" cy="0" r="65.52" fill="none" stroke="#726d64" stroke-width="2.5"/>
+    <rect x="-54.599999999999994" y="-140.4" width="109.19999999999999" height="46.8" fill="#726d64"/>
   </g>
-  <text x="600.0" y="389.4" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="31.2" font-weight="600" fill="#F4F1EA" style="letter-spacing:0.5px">תמונה חסרה</text>
-  <text x="600.0" y="430.2" text-anchor="middle" font-family="Arial, sans-serif" font-size="26.4" fill="#948F85" font-weight="600">כובע NUMB — זווית קדמית</text>
-  <text x="600.0" y="471.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="20.400000000000002" fill="#6b665e">רקע נקי / שחור, תאורה אחידה</text>
-  <text x="600.0" y="1474" text-anchor="middle" font-family="Arial, sans-serif" font-size="19.2" fill="#524e47">NUMB — placeholder — product-cap-1.svg</text>
+  <text x="600.0" y="389.4" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="31.2" font-weight="600" fill="#18160F" style="letter-spacing:0.5px">תמונה חסרה</text>
+  <text x="600.0" y="430.2" text-anchor="middle" font-family="Arial, sans-serif" font-size="26.4" fill="#726d64" font-weight="600">כובע NUMB — זווית קדמית</text>
+  <text x="600.0" y="471.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="20.400000000000002" fill="#8f887b">רקע לבן/בהיר, תאורה אחידה</text>
+  <text x="600.0" y="1474" text-anchor="middle" font-family="Arial, sans-serif" font-size="19.2" fill="#b3ac9e">NUMB — placeholder — product-cap-1.svg</text>
 </svg>
