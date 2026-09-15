@@ -170,7 +170,7 @@ textarea:focus-visible {
 /* ---------- Header ---------- */
 .site-header {
   position: sticky;
-  top: 0;
+  top: env(safe-area-inset-top, 0px);
   z-index: 100;
   height: var(--header-h);
   display: flex;
