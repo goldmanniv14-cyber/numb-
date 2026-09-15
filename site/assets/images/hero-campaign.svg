@@ -1,20 +1,19 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 2000" width="1600" height="2000" role="img" aria-label="צילום קמפיין ראשי (הירו)">
   <defs>
-    <pattern id="diag-hero-campaign.svg" width="28" height="28" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">
-      <rect width="28" height="28" fill="#0A0A0A"/>
-      <line x1="0" y1="0" x2="0" y2="28" stroke="#1c1c1c" stroke-width="14"/>
-    </pattern>
+    <linearGradient id="g-hero-campaign.svg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#171614"/>
+      <stop offset="1" stop-color="#0B0B0A"/>
+    </linearGradient>
   </defs>
-  <rect width="1600" height="2000" fill="url(#diag-hero-campaign.svg)"/>
-  <rect x="0" y="0" width="1600" height="2000" fill="#0A0A0A" fill-opacity="0.55"/>
-  <rect x="18" y="18" width="1564" height="1964" fill="none" stroke="#E31B23" stroke-width="3"/>
+  <rect width="1600" height="2000" fill="url(#g-hero-campaign.svg)"/>
+  <rect x="14" y="14" width="1572" height="1972" fill="none" stroke="#2a2825" stroke-width="1"/>
   <g transform="translate(800.0,280.0)">
-    <rect x="-208.0" y="-128.96" width="416.0" height="257.92" rx="6" fill="none" stroke="#F7F5F2" stroke-width="4"/>
-    <circle cx="0" cy="0" r="87.36" fill="none" stroke="#F7F5F2" stroke-width="4"/>
-    <rect x="-72.8" y="-187.20000000000002" width="145.6" height="62.4" fill="#F7F5F2"/>
+    <rect x="-208.0" y="-128.96" width="416.0" height="257.92" rx="2" fill="none" stroke="#948F85" stroke-width="2.5"/>
+    <circle cx="0" cy="0" r="87.36" fill="none" stroke="#948F85" stroke-width="2.5"/>
+    <rect x="-72.8" y="-187.20000000000002" width="145.6" height="62.4" fill="#948F85"/>
   </g>
-  <text x="800.0" y="519.2" text-anchor="middle" font-family="Arial, sans-serif" font-size="41.6" font-weight="700" fill="#F7F5F2" style="letter-spacing:1px">תמונה חסרה</text>
-  <text x="800.0" y="573.6" text-anchor="middle" font-family="Arial, sans-serif" font-size="35.199999999999996" fill="#E31B23" font-weight="700">צילום קמפיין ראשי (הירו)</text>
-  <text x="800.0" y="628.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="27.200000000000003" fill="#B8B8B8">תמונת סטודיו/רחוב, שחור-לבן, גדולה ורוחבית לנייד</text>
-  <text x="800.0" y="1974" text-anchor="middle" font-family="Arial, sans-serif" font-size="25.6" fill="#7a7a7a">NUMB — placeholder — hero-campaign.svg</text>
+  <text x="800.0" y="519.2" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="41.6" font-weight="600" fill="#F4F1EA" style="letter-spacing:0.5px">תמונה חסרה</text>
+  <text x="800.0" y="573.6" text-anchor="middle" font-family="Arial, sans-serif" font-size="35.199999999999996" fill="#948F85" font-weight="600">צילום קמפיין ראשי (הירו)</text>
+  <text x="800.0" y="628.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="27.200000000000003" fill="#6b665e">תמונת סטודיו/רחוב, שחור-לבן, גדולה ורוחבית לנייד</text>
+  <text x="800.0" y="1974" text-anchor="middle" font-family="Arial, sans-serif" font-size="25.6" fill="#524e47">NUMB — placeholder — hero-campaign.svg</text>
 </svg>

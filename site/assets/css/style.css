@@ -1,35 +1,37 @@
 /* =========================================================================
    NUMB — Design tokens & base styles
-   Style direction: streetwear brutalism — raw, high-contrast, editorial.
-   Palette: near-black / off-white with a single red accent (brand energy,
-   used only for CTAs, tags and key emphasis — never for errors/status).
-   Type: Anton (English display, uppercase, badges/slogan/logo) + Heebo
-   (Hebrew + Latin, body & headings — supports RTL natively).
+   Style direction: quiet-luxury editorial streetwear — moody black/white
+   photography-led layout, generous whitespace, thin hairlines instead of
+   heavy borders. A deep, desaturated red ("oxblood") survives only as a
+   rare signature mark (the next-drop tag, one CTA) — never as decoration.
+   Type: Bodoni Moda (English display serif — slogan, eyebrows, headings)
+   + Heebo (Hebrew + Latin, body & UI — supports RTL natively).
    ========================================================================= */
 
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Heebo:wght@400;500;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Heebo:wght@300;400;500;700;800&display=swap');
 
 :root {
-  --black: #0a0a0a;
-  --near-black: #111111;
-  --off-black: #171717;
-  --white: #f7f5f2;
+  --black: #0b0b0a;
+  --near-black: #121110;
+  --off-black: #171614;
+  --white: #f4f1ea;
   --pure-white: #ffffff;
-  --grey-800: #2b2b2b;
-  --grey-600: #4d4d4d;
-  --grey-400: #8a8a8a;
-  --grey-200: #d8d6d2;
-  --red: #e31b23;
-  --red-dark: #a8131a;
+  --grey-800: #2a2825;
+  --grey-600: #55524c;
+  --grey-400: #948f85;
+  --grey-200: #ddd8cd;
+  --red: #7c1f1f;
+  --red-dark: #5c1616;
+  --red-bright: #a83232;
 
   --bg: var(--black);
   --bg-alt: var(--off-black);
   --fg: var(--white);
   --fg-muted: var(--grey-400);
-  --border-color: #2c2c2c;
-  --border-color-light: rgba(247, 245, 242, 0.18);
+  --border-color: #26241f;
+  --border-color-light: rgba(244, 241, 234, 0.14);
 
-  --font-display: 'Anton', 'Arial Narrow', sans-serif;
+  --font-display: 'Bodoni Moda', 'Georgia', serif;
   --font-body: 'Heebo', 'Arial Hebrew', 'Arial', sans-serif;
 
   --fs-hero: clamp(2.6rem, 12vw, 6rem);
@@ -49,9 +51,9 @@
   --space-7: 6rem;
 
   --radius: 2px;
-  --border-w: 2px;
-  --border-w-thick: 3px;
-  --transition: 160ms ease;
+  --border-w: 1px;
+  --border-w-thick: 1.5px;
+  --transition: 200ms ease;
   --container: 1280px;
   --header-h: 64px;
   --bottomnav-h: 64px;
@@ -114,7 +116,7 @@ a:focus-visible,
 button:focus-visible,
 input:focus-visible,
 textarea:focus-visible {
-  outline: 3px solid var(--red);
+  outline: 2px solid var(--pure-white);
   outline-offset: 2px;
 }
 
@@ -141,13 +143,18 @@ textarea:focus-visible {
 }
 .skip-link:focus { top: 12px; }
 
-/* ---------- Eyebrow / display type ---------- */
+/* ---------- Eyebrow / display type ----------
+   Red is spent on exactly three things across the whole site: the hero's
+   "JUST HARD FITS" line, the next-drop tag, and the waitlist button
+   (.btn-signature). Everything else — including every eyebrow — stays
+   neutral so those three moments keep their weight. */
 .eyebrow {
-  font-family: var(--font-display);
+  font-family: var(--font-body);
+  font-weight: 700;
   font-size: var(--fs-eyebrow);
-  letter-spacing: 0.14em;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: var(--red);
+  color: var(--fg-muted);
   display: inline-flex;
   align-items: center;
   gap: 0.6em;
@@ -155,16 +162,16 @@ textarea:focus-visible {
 .eyebrow::before {
   content: '';
   width: 22px;
-  height: var(--border-w-thick);
-  background: var(--red);
+  height: 1px;
+  background: var(--fg-muted);
   display: inline-block;
 }
 
 .display-lockup {
   font-family: var(--font-display);
-  text-transform: uppercase;
-  letter-spacing: 0.01em;
-  line-height: 0.95;
+  font-style: normal;
+  letter-spacing: 0.005em;
+  line-height: 1.02;
 }
 
 /* ---------- Header ---------- */
@@ -209,8 +216,8 @@ textarea:focus-visible {
 }
 .nav-desktop a:hover,
 .nav-desktop a[aria-current="page"] {
-  border-color: var(--red);
-  color: var(--red);
+  border-color: var(--pure-white);
+  color: var(--pure-white);
 }
 
 .menu-toggle {
@@ -224,7 +231,7 @@ textarea:focus-visible {
   color: var(--pure-white);
   border-radius: var(--radius);
 }
-.menu-toggle:hover { border-color: var(--red); color: var(--red); }
+.menu-toggle:hover { border-color: var(--pure-white); color: var(--pure-white); }
 
 @media (min-width: 900px) {
   .nav-desktop { display: flex; }
@@ -272,7 +279,7 @@ textarea:focus-visible {
   gap: var(--space-1);
 }
 .mobile-menu-footer .social-row { display: flex; gap: var(--space-3); }
-.mobile-menu-footer .social-row a { color: var(--pure-white); font-weight: 700; border-bottom: var(--border-w) solid var(--red); }
+.mobile-menu-footer .social-row a { color: var(--pure-white); font-weight: 700; border-bottom: var(--border-w) solid var(--grey-400); }
 
 @media (min-width: 900px) {
   .mobile-menu { display: none; }
@@ -295,26 +302,36 @@ textarea:focus-visible {
 }
 .btn:active { transform: translateY(1px); }
 
+/* Primary CTA: white on black — the "premium pill button" most actions use.
+   Red is spent in exactly one place on the whole site (the waitlist submit,
+   .btn-signature) plus the next-drop tag — never on general buttons. */
 .btn-primary {
-  background: var(--red);
-  color: var(--pure-white);
-  border-color: var(--red);
+  background: var(--pure-white);
+  color: var(--black);
+  border-color: var(--pure-white);
 }
-.btn-primary:hover { background: var(--red-dark); border-color: var(--red-dark); }
+.btn-primary:hover { background: var(--grey-200); border-color: var(--grey-200); }
 
 .btn-outline {
   background: transparent;
   color: var(--pure-white);
-  border-color: var(--pure-white);
+  border-color: var(--border-color-light);
 }
-.btn-outline:hover { background: var(--pure-white); color: var(--black); }
+.btn-outline:hover { border-color: var(--pure-white); }
+
+.btn-signature {
+  background: var(--red);
+  color: var(--pure-white);
+  border-color: var(--red);
+}
+.btn-signature:hover { background: var(--red-dark); border-color: var(--red-dark); }
 
 .btn-ghost-red {
   background: transparent;
-  color: var(--red);
+  color: var(--red-bright);
   border-color: var(--red);
 }
-.btn-ghost-red:hover { background: var(--red); color: var(--pure-white); }
+.btn-ghost-red:hover { background: var(--red); color: var(--pure-white); border-color: var(--red); }
 
 .btn[disabled],
 .btn.is-disabled {
@@ -333,7 +350,6 @@ textarea:focus-visible {
   display: flex;
   align-items: flex-end;
   overflow: hidden;
-  border-bottom: var(--border-w-thick) solid var(--red);
 }
 .hero-media { position: absolute; inset: 0; z-index: 0; }
 .hero-media img { width: 100%; height: 100%; object-fit: cover; }
@@ -398,7 +414,7 @@ textarea:focus-visible {
   flex-direction: column;
   gap: 10px;
 }
-.pillar svg { width: 28px; height: 28px; color: var(--red); }
+.pillar svg { width: 28px; height: 28px; color: var(--grey-200); }
 .pillar h3 { font-size: 1.05rem; }
 .pillar p { color: var(--fg-muted); font-size: var(--fs-small); }
 
@@ -421,7 +437,7 @@ textarea:focus-visible {
   background: var(--bg-alt);
   transition: border-color var(--transition), transform var(--transition);
 }
-.product-card:hover { border-color: var(--red); transform: translateY(-3px); }
+.product-card:hover { border-color: var(--grey-400); transform: translateY(-3px); }
 
 .product-card .thumb {
   position: relative;
@@ -435,19 +451,22 @@ textarea:focus-visible {
   position: absolute;
   top: 10px;
   inset-inline-start: 10px;
-  font-family: var(--font-display);
-  font-size: 0.7rem;
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 0.68rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  padding: 6px 10px;
-  background: var(--red);
-  color: var(--pure-white);
+  padding: 5px 10px;
+  background: rgba(11, 11, 10, 0.72);
+  backdrop-filter: blur(3px);
+  color: var(--red-bright);
+  border: 1px solid var(--red);
   z-index: 2;
 }
 .tag.tag-soldout {
-  background: repeating-linear-gradient(135deg, var(--grey-800), var(--grey-800) 6px, var(--black) 6px, var(--black) 12px);
-  color: var(--pure-white);
-  border: 1px solid var(--grey-400);
+  background: rgba(11, 11, 10, 0.72);
+  color: var(--grey-400);
+  border: 1px solid var(--grey-600);
 }
 
 .product-card .meta { padding: 12px 14px 16px; }
@@ -465,7 +484,7 @@ textarea:focus-visible {
 .product-card .status-line {
   margin-top: 6px;
   font-size: var(--fs-small);
-  color: var(--red);
+  color: var(--red-bright);
   font-weight: 700;
 }
 .product-card.is-soldout .status-line { color: var(--grey-400); }
@@ -489,14 +508,14 @@ textarea:focus-visible {
   min-height: 40px;
 }
 .chip[aria-pressed="true"] {
-  background: var(--red);
-  border-color: var(--red);
-  color: var(--pure-white);
+  background: var(--pure-white);
+  border-color: var(--pure-white);
+  color: var(--black);
 }
 
 /* ---------- Waitlist form ---------- */
 .waitlist-card {
-  border: var(--border-w-thick) solid var(--red);
+  border: var(--border-w) solid var(--border-color);
   padding: var(--space-4);
   background: var(--bg-alt);
 }
@@ -528,12 +547,12 @@ textarea:focus-visible {
   border-radius: var(--radius);
 }
 .field input::placeholder { color: var(--grey-600); }
-.field input:focus { border-color: var(--red); }
+.field input:focus { border-color: var(--pure-white); }
 .form-msg {
   margin-top: 10px;
   font-size: var(--fs-small);
   font-weight: 700;
-  color: var(--red);
+  color: var(--grey-200);
 }
 .form-msg[hidden] { display: none; }
 
@@ -593,7 +612,7 @@ textarea:focus-visible {
   background: none;
   overflow: hidden;
 }
-.pd-thumbs button.is-active { border-color: var(--red); }
+.pd-thumbs button.is-active { border-color: var(--pure-white); }
 .pd-thumbs img { width: 100%; height: 100%; object-fit: cover; }
 
 .pd-info .cat { color: var(--fg-muted); font-size: var(--fs-small); text-transform: uppercase; letter-spacing: 0.06em; }
@@ -606,19 +625,19 @@ textarea:focus-visible {
   letter-spacing: 0.06em;
   padding: 8px 14px;
 }
-.pd-info .status.coming-soon { background: var(--red); color: var(--pure-white); }
+.pd-info .status.coming-soon { background: transparent; color: var(--red-bright); border: 1px solid var(--red); }
 .pd-info .status.sold-out { color: var(--grey-400); border: var(--border-w) solid var(--grey-600); }
 .pd-info .desc { margin-top: var(--space-3); color: var(--grey-200); line-height: 1.7; }
 .pd-info .notice {
   margin-top: var(--space-3);
-  border-inline-start: var(--border-w-thick) solid var(--red);
+  border-inline-start: var(--border-w-thick) solid var(--border-color-light);
   padding-inline-start: 14px;
   color: var(--fg-muted);
   font-size: var(--fs-small);
 }
 .pd-info .btn { margin-top: var(--space-4); }
 .pd-back { display: inline-flex; align-items: center; gap: 8px; color: var(--fg-muted); font-size: var(--fs-small); margin-bottom: var(--space-3); }
-.pd-back:hover { color: var(--red); }
+.pd-back:hover { color: var(--pure-white); }
 
 /* ---------- Footer ---------- */
 .site-footer {
@@ -645,7 +664,7 @@ textarea:focus-visible {
   margin-bottom: 12px;
 }
 .footer-col ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
-.footer-col a:hover { color: var(--red); }
+.footer-col a:hover { color: var(--pure-white); }
 .footer-bottom {
   margin-top: var(--space-4);
   padding-top: var(--space-3);
@@ -683,7 +702,7 @@ textarea:focus-visible {
   min-height: 44px;
 }
 .bottom-nav a svg { width: 22px; height: 22px; }
-.bottom-nav a[aria-current="page"] { color: var(--red); }
+.bottom-nav a[aria-current="page"] { color: var(--pure-white); }
 @media (min-width: 900px) {
   .bottom-nav { display: none; }
   body { padding-bottom: 0; }

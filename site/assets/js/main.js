@@ -179,7 +179,7 @@
 
     var ctaHtml = soldOut
       ? '<button class="btn btn-outline is-disabled btn-block" disabled>אזל מהמלאי</button>'
-      : '<a class="btn btn-primary btn-block" href="index.html#waitlist">הצטרפו לרשימת ההמתנה</a>';
+      : '<a class="btn btn-signature btn-block" href="index.html#waitlist">הצטרפו לרשימת ההמתנה</a>';
 
     var thumbsHtml = product.images.map(function (src, i) {
       return '<button type="button" data-thumb="' + i + '" class="' + (i === 0 ? 'is-active' : '') + '" aria-label="תמונה ' + (i + 1) + ' מתוך ' + product.images.length + '"><img src="' + src + '" alt=""></button>';
