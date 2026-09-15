@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>NUMB — סטריטוור ישראלי מאשדוד</title>
+<meta name="description" content="NUMB — מותג סטריטוור ישראלי מאשדוד. NO HARD FEELINGS. JUST HARD FITS. גלו את הדרופ הבא שלנו.">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="home">
+<a class="skip-link" href="#main">דלגו לתוכן</a>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="brand-logo">NUMB<span class="dot">.</span></a>
+    <nav class="nav-desktop" aria-label="ניווט ראשי">
+      <a href="index.html" aria-current="page">בית</a>
+      <a href="catalog.html">קטלוג</a>
+      <a href="index.html#next-drop">הדרופ הבא</a>
+      <a href="about.html">עלינו</a>
+    </nav>
+    <button class="menu-toggle" data-menu-toggle aria-haspopup="true" aria-expanded="false" aria-controls="mobile-menu" aria-label="פתיחת תפריט">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18"/><path d="M3 12h18"/><path d="M3 18h18"/></svg>
+    </button>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobile-menu" data-mobile-menu>
+  <div class="mobile-menu-top">
+    <a href="index.html" class="brand-logo">NUMB<span class="dot">.</span></a>
+    <button class="menu-toggle" data-menu-close aria-label="סגירת תפריט">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6L6 18"/><path d="M6 6l12 12"/></svg>
+    </button>
+  </div>
+  <nav aria-label="ניווט נייד">
+    <a href="index.html">בית</a>
+    <a href="catalog.html">קטלוג</a>
+    <a href="index.html#next-drop">הדרופ הבא</a>
+    <a href="about.html">עלינו</a>
+  </nav>
+  <div class="mobile-menu-footer">
+    <span>אשדוד, ישראל</span>
+    <div class="social-row">
+      <a href="#">אינסטגרם</a>
+      <a href="#">טיקטוק</a>
+    </div>
+  </div>
+</div>
+
+<main id="main">
+
+  <!-- HERO: brand + next drop, first thing a visitor sees -->
+  <section class="hero">
+    <div class="hero-media">
+      <img src="assets/images/hero-campaign.svg" alt="קמפיין NUMB — תמונה זמנית, יש להחליף בצילום קמפיין אמיתי" width="1600" height="2000">
+    </div>
+    <div class="hero-content container">
+      <p class="eyebrow">NUMB · אשדוד</p>
+      <h1 class="hero-slogan display-lockup">NO HARD<br>FEELINGS.<br><span class="accent">JUST HARD FITS.</span></h1>
+      <p class="hero-sub">סטריטוור ישראלי מאשדוד. עיצוב מקורי, שחור-לבן, ובלי להתנצל. הדרופ הבא כבר בדרך.</p>
+      <div class="hero-cta-row">
+        <a class="btn btn-primary" href="#next-drop">לצפייה בדרופ הבא</a>
+        <a class="btn btn-outline" href="catalog.html">לכל הקטלוג</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEXT DROP -->
+  <section class="section" id="next-drop">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Drop Next</p>
+        <h2 class="heading">הדרופ הבא שלנו</h2>
+        <p style="color:var(--fg-muted); max-width:60ch;">כובע, מכנסיים קצרים וחולצה לנשים. בלי תאריך, בלי הבטחות — רק פריטים. מחיר, מידות וזמינות יתעדכנו כאן ברגע שיאושרו.</p>
+      </div>
+
+      <div class="product-grid reveal" data-next-drop-grid>
+        <!-- filled by main.js from products-data.js -->
+      </div>
+
+      <div class="waitlist-card reveal" id="waitlist" style="margin-top: var(--space-5);">
+        <h3>שיהיו הראשונים לדעת</h3>
+        <p>השאירו אימייל ונעדכן אתכם ברגע שהדרופ עולה. (הדגמה בלבד — הטופס עדיין לא מחובר למערכת אמיתית.)</p>
+        <form class="waitlist-form" data-waitlist-form novalidate>
+          <div class="field">
+            <label for="waitlist-email">אימייל</label>
+            <input id="waitlist-email" name="email" type="email" placeholder="you@example.com" required inputmode="email" autocomplete="email">
+          </div>
+          <button class="btn btn-primary" type="submit">הצטרפו לרשימה</button>
+        </form>
+        <p class="form-msg" data-form-msg hidden></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SHOP / BRAND PILLARS -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Shop</p>
+        <h2 class="heading">למה NUMB</h2>
+      </div>
+      <div class="pillars reveal">
+        <div class="pillar">
+          <svg data-icon="drop" viewBox="0 0 24 24"></svg>
+          <h3>עיצוב מקורי</h3>
+          <p>כל פריט מתוכנן מאפס — לא עוד הדפס גנרי.</p>
+        </div>
+        <div class="pillar">
+          <svg data-icon="grid" viewBox="0 0 24 24"></svg>
+          <h3>דרופים מוגבלים</h3>
+          <p>קולקציות בכמות מוגבלת, לא מלאי אינסופי.</p>
+        </div>
+        <div class="pillar">
+          <svg data-icon="home" viewBox="0 0 24 24"></svg>
+          <h3>מאשדוד, בגאווה</h3>
+          <p>מותג ישראלי שנבנה מהשטח, לא ממשרד שיווק.</p>
+        </div>
+      </div>
+      <div class="section-foot reveal">
+        <a class="btn btn-ghost-red" href="catalog.html">לצפייה בכל הקטלוג</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- OUR STORY TEASER -->
+  <section class="section">
+    <div class="container">
+      <div class="story-grid reveal">
+        <div class="story-media">
+          <img src="assets/images/about-story.svg" alt="תמונת סטודיו NUMB — תמונה זמנית, יש להחליף" width="1400" height="1000">
+        </div>
+        <div class="story-text">
+          <p class="eyebrow">The Story</p>
+          <h2 class="heading">הסיפור שלנו</h2>
+          <p>NUMB נולד באשדוד, מתוך רצון לבנות מותג סטריטוור ישראלי עם שפה עיצובית משלו — לא תבנית של אף אחד אחר.</p>
+          <p>מאחורי המותג עומדים ניב, ליאון וליאל. NO HARD FEELINGS. JUST HARD FITS.</p>
+          <div style="margin-top: var(--space-3);">
+            <a class="btn btn-outline" href="about.html">הכירו אותנו</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand-logo">NUMB<span class="dot">.</span></a>
+        <p>סטריטוור ישראלי מאשדוד. NO HARD FEELINGS. JUST HARD FITS.</p>
+      </div>
+      <div class="footer-col">
+        <h4>ניווט</h4>
+        <ul>
+          <li><a href="index.html">בית</a></li>
+          <li><a href="catalog.html">קטלוג</a></li>
+          <li><a href="index.html#next-drop">הדרופ הבא</a></li>
+          <li><a href="about.html">עלינו</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>עקבו אחרינו</h4>
+        <ul>
+          <li><a href="#">אינסטגרם</a></li>
+          <li><a href="#">טיקטוק</a></li>
+        </ul>
+        <p style="margin-top:12px; color:var(--grey-600); font-size:var(--fs-small);">אשדוד, ישראל</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year></span> NUMB. כל הזכויות שמורות.</span>
+      <span>אתר תצוגה מקדימה לאישור — אינו החנות הפעילה.</span>
+    </div>
+  </div>
+</footer>
+
+<nav class="bottom-nav" aria-label="ניווט תחתון">
+  <a href="index.html" data-nav-for="home"><svg data-icon="home" viewBox="0 0 24 24"></svg>בית</a>
+  <a href="catalog.html" data-nav-for="catalog"><svg data-icon="grid" viewBox="0 0 24 24"></svg>קטלוג</a>
+  <a href="index.html#next-drop"><svg data-icon="drop" viewBox="0 0 24 24"></svg>דרופ הבא</a>
+  <a href="about.html" data-nav-for="about"><svg data-icon="info" viewBox="0 0 24 24"></svg>עלינו</a>
+</nav>
+
+<script src="assets/js/products-data.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

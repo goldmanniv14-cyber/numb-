@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>קטלוג — NUMB</title>
+<meta name="description" content="קטלוג NUMB — הדרופ הבא וארכיון דרופים קודמים.">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="catalog">
+<a class="skip-link" href="#main">דלגו לתוכן</a>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="brand-logo">NUMB<span class="dot">.</span></a>
+    <nav class="nav-desktop" aria-label="ניווט ראשי">
+      <a href="index.html">בית</a>
+      <a href="catalog.html" aria-current="page">קטלוג</a>
+      <a href="index.html#next-drop">הדרופ הבא</a>
+      <a href="about.html">עלינו</a>
+    </nav>
+    <button class="menu-toggle" data-menu-toggle aria-haspopup="true" aria-expanded="false" aria-controls="mobile-menu" aria-label="פתיחת תפריט">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18"/><path d="M3 12h18"/><path d="M3 18h18"/></svg>
+    </button>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobile-menu" data-mobile-menu>
+  <div class="mobile-menu-top">
+    <a href="index.html" class="brand-logo">NUMB<span class="dot">.</span></a>
+    <button class="menu-toggle" data-menu-close aria-label="סגירת תפריט">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6L6 18"/><path d="M6 6l12 12"/></svg>
+    </button>
+  </div>
+  <nav aria-label="ניווט נייד">
+    <a href="index.html">בית</a>
+    <a href="catalog.html">קטלוג</a>
+    <a href="index.html#next-drop">הדרופ הבא</a>
+    <a href="about.html">עלינו</a>
+  </nav>
+  <div class="mobile-menu-footer">
+    <span>אשדוד, ישראל</span>
+    <div class="social-row">
+      <a href="#">אינסטגרם</a>
+      <a href="#">טיקטוק</a>
+    </div>
+  </div>
+</div>
+
+<main id="main">
+  <section class="section" style="padding-top: var(--space-5);">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Catalog</p>
+        <h1 class="heading" style="font-size:var(--fs-h1);">הקטלוג של NUMB</h1>
+        <p style="color:var(--fg-muted); max-width:60ch;">הדרופ הבא וארכיון דרופים קודמים, במקום אחד.</p>
+      </div>
+
+      <div class="filter-row" role="group" aria-label="סינון קטלוג">
+        <button class="chip" data-filter-chip="all" aria-pressed="true">הכל</button>
+        <button class="chip" data-filter-chip="drop" aria-pressed="false">הדרופ הבא</button>
+        <button class="chip" data-filter-chip="archive" aria-pressed="false">ארכיון</button>
+      </div>
+
+      <div class="product-grid cols-4" data-catalog-grid>
+        <!-- filled by main.js -->
+      </div>
+
+      <p class="build-note" data-catalog-empty hidden>אין עדיין פריטים בקטגוריה הזו.</p>
+
+      <p class="build-note" id="archive" style="margin-top: var(--space-4);">
+        הערה: פריט הארכיון המוצג כרגע הוא <strong>דוגמה בלבד</strong> להמחשת סימון "אזל מהמלאי".
+        כדי להציג ארכיון אמיתי — יש לשלוח שמות, קטגוריות ותמונות של פריטים מדרופים קודמים.
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand-logo">NUMB<span class="dot">.</span></a>
+        <p>סטריטוור ישראלי מאשדוד. NO HARD FEELINGS. JUST HARD FITS.</p>
+      </div>
+      <div class="footer-col">
+        <h4>ניווט</h4>
+        <ul>
+          <li><a href="index.html">בית</a></li>
+          <li><a href="catalog.html">קטלוג</a></li>
+          <li><a href="index.html#next-drop">הדרופ הבא</a></li>
+          <li><a href="about.html">עלינו</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>עקבו אחרינו</h4>
+        <ul>
+          <li><a href="#">אינסטגרם</a></li>
+          <li><a href="#">טיקטוק</a></li>
+        </ul>
+        <p style="margin-top:12px; color:var(--grey-600); font-size:var(--fs-small);">אשדוד, ישראל</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year></span> NUMB. כל הזכויות שמורות.</span>
+      <span>אתר תצוגה מקדימה לאישור — אינו החנות הפעילה.</span>
+    </div>
+  </div>
+</footer>
+
+<nav class="bottom-nav" aria-label="ניווט תחתון">
+  <a href="index.html" data-nav-for="home"><svg data-icon="home" viewBox="0 0 24 24"></svg>בית</a>
+  <a href="catalog.html" data-nav-for="catalog"><svg data-icon="grid" viewBox="0 0 24 24"></svg>קטלוג</a>
+  <a href="index.html#next-drop"><svg data-icon="drop" viewBox="0 0 24 24"></svg>דרופ הבא</a>
+  <a href="about.html" data-nav-for="about"><svg data-icon="info" viewBox="0 0 24 24"></svg>עלינו</a>
+</nav>
+
+<script src="assets/js/products-data.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
